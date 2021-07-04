@@ -32,8 +32,9 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: mon-cv.tex
+          args: -output-directory=build -aux-directory=auxfile
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: mon-cv.pdf
+          folder: build
