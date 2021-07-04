@@ -31,7 +31,7 @@ jobs:
       - name: Compile LaTeX document 🔧
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: mon-cv.tex
+          root_file: mon-cv-fr.tex
           args: -pdf -output-directory=build -aux-directory=auxdir
           post_compile: "latexmk -c -pdf -output-directory=build -aux-directory=auxdir"
       - name: Deploy 🚀
