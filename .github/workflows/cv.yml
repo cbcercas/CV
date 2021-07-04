@@ -32,7 +32,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: mon-cv.tex
-          args: -output-directory=build -aux-directory=auxdir
+          args: -pdf -output-directory=build -aux-directory=auxdir
+          post_compile: "latexmk -c -pdf -output-directory=build -aux-directory=auxdir"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
