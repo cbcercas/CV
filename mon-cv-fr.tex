@@ -145,7 +145,10 @@
 	% include gosquare national flags from https://github.com/gosquared/flags;
 	% naming according to ISO 3166-1 alpha-2 country codes
 	\graphicspath{{FortySecondsCV/pics/flags/shiny/}}
-
+	\sidesection{A propos de moi}
+		\aboutme{
+			Pationné de nouvelles technologie, curieux, j'aime découvrir de nouvelles choses.
+		}
 	% social network accounts incl. proper hyperlinks
 	\sidesection{Réseaux Sociaux}
 		\begin{icontable}{2.5em}{1em}
@@ -157,21 +160,10 @@
 				{Github Page CV}
 		\end{icontable}
 
-	\sidesection{Languages}
+	\sidesection{Linguistiques}
 		\pointskill{\flag{FR.png}}{Français}{5}
 		\pointskill{\flag{GB.png}}{Anglais}{3}
 
-	\sidesection{Hard Skills}
-		\skill{\faBalanceScale}{Sleeping almost all day}
-		\skill{\faSitemap}{Eating a lot of bamboo sprouts}
-		\skill{\faGraduationCap}{Relaxing rest of the day}
-
-	\sidesection{Soft Skills}
-		\pointskill{\faHome}{Looking Cute}{4}[4]
-			\skill[1.8em]{\faCompress}{No need to specify further}
-		\pointskill{\faChild}{Chillin' hard}{3}[4]
-			\skill[1.8em]{\faCompress}{On a tree}
-			\skill[1.8em]{\faCompress}{In the grass}
 }
 
 
@@ -183,57 +175,26 @@
 \definecolor{pastelorange}{HTML}{F5D5CB}
 \definecolor{pastelyellow}{HTML}{F6F6EB}
 \addtobacksidebar{
-	\sidesection{About Me}
-	\aboutme{
-		The giant panda is a terrestrial animal and primarily spends its life
-		roaming and feeding in the bamboo forests of the Qinling Mountains and in
-		the hilly province of Sichuan.
-	}
 
-	\sidesection{Diagrams}
-	\begin{sidebarminipage}
-		\chartlabel[pastelgreen]{Bubble}
-		\chartlabel[pastelgreen]{Diagrams}
-		\chartlabel[pastelpurple]{with}
-		\chartlabel[pastelpurple]{proper}
-		\chartlabel[pastelorange]{overflow}
-		\chartlabel[pastelorange]{protection}
-		\chartlabel[pastelyellow]{for}
-		\chartlabel[pastelyellow]{labels}
-	\end{sidebarminipage}
+	\sidesection{Languages}
+	\barskill[1ex]{\faSkyatlas}{C}{70}
+	\barskill[1ex]{\faSkyatlas}{Python}{60}
+	\barskill[1ex]{\faSkyatlas}{AngularJS}{50}
 
-	\begin{figure}\centering
-		\smartdiagram[bubble diagram]{
-			\textcolor{white}{\textbf{Being a}} \\
-			\textcolor{white}{\textbf{Panda}}, % center bubble
-			\textcolor{black!90}{Eating},
-			\textcolor{black!90}{Sleeping},
-			\textcolor{black!90}{Rolling},
-			\textcolor{black!90}{Playing},
-			\textcolor{black!90}{Chilling}
-		}
-	\end{figure}
+	\sidesection{Os}
+	\barskill[1ex]{\faSkyatlas}{Linux}{70}
+	\barskill[1ex]{\faSkyatlas}{Freebsd}{60}
+	\barskill[1ex]{\faSkyatlas}{Windows}{35}
 
-	\chartlabel{Wheel Chart}
+	\sidesection{Virtualisation}
+	\barskill[1ex]{\faSkyatlas}{Esxi}{60}
+	\barskill[1ex]{\faSkyatlas}{Proxmox}{30}
 
-	\wheelchart{3.7em}{2em}{%
-	20/3em/maincolor!50/Chill,
-	15/3em/maincolor!15/Play,
-	30/4em/maincolor!40/Sleep,
-	20/3em/maincolor!20/Eat
-	}
+	\sidesection{Conteneurisation}
+	\barskill[1ex]{\faSkyatlas}{Docker}{70}
+	\barskill[1ex]{\faSkyatlas}{Kubernetes}{30}
+	\barskill[1ex]{\faSkyatlas}{freebsd Jail}{40}
 
-	\sidesection{Barskills}
-	\barskill[1ex]{\faSkyatlas}{Wearing asian rice hats}{60}
-	\barskill[2ex]{\faImage}{Playing Chess}{30}
-	\barskill[3ex]{\faMusic}{Playing the bamboo flute}{50}
-
-	\sidesection{Memberships}
-	\begin{memberships}
-		\membership[4em]{FortySecondsCV/pics/logo.png}{PandaScience.net}
-		\membership[4em]{FortySecondsCV/pics/logo.png}{Some longer text spanning over more than
-			only one line}
-	\end{memberships}
 }
 
 
