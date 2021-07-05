@@ -34,6 +34,12 @@ jobs:
           root_file: mon-cv-fr.tex
           args: -pdf -output-directory=build -aux-directory=auxdir
           post_compile: "latexmk -c -pdf -output-directory=build -aux-directory=auxdir"
+      - name: Compile LaTeX document 🔧
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: mon-cv-fr.tex
+          args: -pdf -output-directory=build -aux-directory=auxdir -jobname=anonymize
+          post_compile: "latexmk -c -pdf -output-directory=build -aux-directory=auxdir -jobname=anonymize"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
